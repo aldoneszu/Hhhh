@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starko Hacker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap'); /* خط احترافي */
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Cairo', sans-serif; /* تطبيق الخط الاحترافي */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            box-sizing: border-box;
+            border: 5px solid red; /* إطار أحمر حول الشاشة */
+        }
+        h1 {
+            font-size: 18px;
+            color: red;
+            margin: 10px 0;
+        }
+        .button-container {
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            border: 2px solid red; /* إطار أحمر حول المربع */
+            margin-top: 20px;
+            padding: 0; /* إزالة الحواف الداخلية */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .button-container:active {
+            transform: scale(0.9); /* تأثير الضغط */
+            background-color: red; /* تغيير الخلفية عند الضغط */
+        }
+        .button-text {
+            color: white;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            pointer-events: none; /* منع التفاعل مع النص */
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttonContainer = document.querySelector(".button-container");
+
+            // إضافة وظيفة للنقر العادي
+            buttonContainer.addEventListener("click", function () {
+                window.location.href = "page2.html"; // الانتقال إلى الصفحة الثانية
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>SCRIPT STARKO HACKER</h1>
+    <div class="button-container">
+        <p class="button-text">إضافة الثغرة</p>
+    </div>
+</body>
+</html>
